@@ -4,7 +4,7 @@ html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -50,7 +50,7 @@ header::before {
     right: 0;
     bottom: 0;
     display: block;
-    background: url(HERO.jpeg);
+    background: url(https://imgur.com/YBAyU8g.jpeg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -71,23 +71,30 @@ header::before {
 }
 
 .footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 30px;
     width: 100%;
     background-color: #212121;
     color: rgb(107, 107, 107);
     text-align: center;
     z-index: 5;
+    position: absolute;
+    left:0px;
   }
 
-
-
-
-
-
-
-
-
+  a {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  a[title]:hover::after {
+    content: attr(title);
+    position:absolute;
+    top: -43%;
+    left: -17%;
+    font-family: 'Montserrat', sans-serif;
+  }
 
   .fa {
     padding: 20px;
@@ -95,12 +102,14 @@ header::before {
     width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 10px;
     border-radius: 50%;
+    opacity: 0.7;
   }
   .fa:hover {
-      opacity: 0.7;
-  }
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
   .fa-facebook {
     background: #3B5998;
     color: white;
@@ -117,6 +126,15 @@ header::before {
     background: #8C46F2;
     color: white;
   }
+  .fa-telegram {
+    background: #2B98CE;
+    color: white;
+  }
+
+  .fa-cloud {
+    background: #105a7c;
+    color: white;
+  }
 
  .fa-money {
     background: #17770e;
@@ -126,3 +144,8 @@ header::before {
   .pink-text{
     color: #8C46F2!important
   }
+
+.footer-t{
+  opacity: 0.7;
+  font-weight: bold;
+}

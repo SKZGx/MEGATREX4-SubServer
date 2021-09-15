@@ -62,7 +62,7 @@ header::before {
     z-index: 2;
     position: absolute;
     top: 100vh;
-    background: black;
+    background: #171717;
     line-height: 30px;
     font-weight: lighter;
     padding: 40px 80px 140px 80px;
@@ -80,6 +80,7 @@ header::before {
     text-align: center;
     z-index: 5;
     position: absolute;
+    height:25vh ;
     left:0px;
   }
 
@@ -148,4 +149,41 @@ header::before {
 .footer-t{
   opacity: 0.7;
   font-weight: bold;
+}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+
+
+.copy_link_mess{
+  line-height:40px;
+  border-radius:5px;
+  background:#212121;
+  color:#fff;
+  position: absolute;
+  padding:0 15px;
+  z-index:99;
+  top: 59vh;
+  left:50%;
+  margin-left:-120px;
+  display:none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+}
+
+.footer-t2{
+  color: #4d4d4d;
+  font-weight: bold;
+  opacity: 90;
 }

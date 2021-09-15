@@ -15,15 +15,18 @@
     <body>
     <div class=conc>
 
-        <form method="POST" data-netlify="true" class="decor">
+        <form name="contact" method="POST" data-netlify="true" class="decor">
             <div class="form-left-decoration"></div>
             <div class="form-right-decoration"></div>
             <div class="circle"></div>
             <div class="form-inner">
             <h3>Отпраивть заявку</h3>
-            <input required  type="text" placeholder="Ник в игре*"></label>
-            <input required  type="name" placeholder="Twitch ник*"></label>
-            <input type="email" placeholder="Email"></label>
+            <label>Nickname<input required name="Ник в игре"  type="text" placeholder="Ник в игре*"></label>
+            <label>Twitch<input required name="Twitch ник"  type="name" placeholder="Twitch ник*"></label>
+            <label>Email<input name="Email" type="Email" placeholder="Email"></label>
+            <div class="accept">
+            <input required type="checkbox" id="accept" name="Да" value="accept">
+            <label class="unselectable" for="accept">Я принимаю <a class="rules">правила и условия*</a></label></div>
             <input type="submit" value="Отправить">
             </div>
         </form>

@@ -3,6 +3,7 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-size: 16px;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,6 +36,10 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 header,
@@ -65,7 +70,7 @@ header::before {
     background: #171717;
     line-height: 30px;
     font-weight: lighter;
-    padding: 40px 80px 140px 80px;
+    padding: 40px 10% ;
     text-align: justify;
     color: rgb(190, 190, 190);
 }
@@ -73,7 +78,7 @@ header::before {
 .footer {
     margin-top: 30px;
     padding-top: 5px;
-    padding-bottom: 30px;
+    padding-bottom: 64px;
     width: 100%;
     background-color: #212121;
     color: rgb(107, 107, 107);
@@ -145,23 +150,32 @@ header::before {
   .pink-text{
     color: #8C46F2!important
   }
+  .pt{
+    display:contents;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
 .footer-t{
   opacity: 0.7;
   font-weight: bold;
 }
 
+
 .unselectable {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-
+.imgs{
+  float:left;
+  margin: 7px 7px 7px 0;
+  padding: 10px 20px 30px 0px;
+}
 
 .copy_link_mess{
   line-height:40px;
@@ -171,9 +185,9 @@ header::before {
   position: absolute;
   padding:0 15px;
   z-index:99;
-  top: 59vh;
+  top: 57vh;
   left:50%;
-  margin-left:-120px;
+  margin-left:-135px;
   display:none;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
   -webkit-border-radius:5px;
@@ -186,4 +200,114 @@ header::before {
   color: #4d4d4d;
   font-weight: bold;
   opacity: 90;
+}
+
+
+
+.btn{
+  width: 100%;
+  text-align: center;
+}
+
+.toform {
+  margin-top: 30px;
+  background: #6441A4;
+  border-bottom: 4px solid #4f3188;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 0 20px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 240px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+.toform:hover {
+  background: #482e79;
+  border-bottom: 4px solid #4f3188;
+  color: white;
+}
+
+.shadow{
+  filter: drop-shadow(2px 0px 5px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(2px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+.product-item {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #303134;
+  background: #303134;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s ease-in;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.product-item:hover {
+  border-bottom: 2px solid #6C3BB3;
+  border-radius: 15px;
+}
+.product-item img {
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+}
+.product-list {
+  background: #303134;
+  padding: 15px 0;
+  border-radius: 15px;
+}
+.product-list h3 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #AEC1C6;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  border-radius: 15px;
+}
+.details {
+  font-size: 14px;
+  color: #BEBEBE;
+  display: block;
+  text-align:center;
+  margin-bottom: 12px;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 9px;
+}
+.product-item:hover .button {
+  background: #6C3BB3;
+  border-radius: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #414141;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

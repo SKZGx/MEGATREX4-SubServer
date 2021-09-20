@@ -148,8 +148,21 @@ header::before {
   }
 
   .pink-text{
-    color: #8C46F2!important
+    color: #8C46F2!important;
   }
+  .rede-text{
+    color: #757575!important;
+    text-align: center;
+    font-weight:normal;
+    font-size: 13px;
+  }
+.size-16{
+  font-size: 18px;
+}
+.size-17{
+  font-size: 14px;
+}
+
   .pt{
     display:contents;
     text-decoration: none;

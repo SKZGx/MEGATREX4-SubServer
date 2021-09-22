@@ -162,6 +162,10 @@ header::before {
 .size-17{
   font-size: 14px;
 }
+.size-11{
+  font-size: 11px!important;
+  color: #ACACAC;
+}
 
   .pt{
     display:contents;

@@ -331,3 +331,40 @@ header::before {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+
+
+
+.arrow-down span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #6431ad;
+  border-right: 5px solid #9148fa;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-down 2s infinite;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+.arrow-down span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}

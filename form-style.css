@@ -81,7 +81,7 @@ html {
  }
  .form-inner input, .form-inner textarea {
     display: block;
-    width: 100%;
+    width: 87%;
     padding: 0 20px;
     margin-bottom: 10px;
     background: #E9EFF6;
@@ -144,4 +144,22 @@ html {
    text-align: center;
    font-size: 17px;
    font-weight: 1000;
+}
+
+select, option{
+   align-items: center;
+   padding: 10px;
+
+   display: block;
+   width: 100%;
+   margin-bottom: 10px;
+   background: #E9EFF6;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.subb{
+   width: 100%!important;
 }

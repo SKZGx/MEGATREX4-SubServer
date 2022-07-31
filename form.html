@@ -14,23 +14,34 @@
     </head>
     <body>
     <div class=conc>
-
-        <form name="Заявки" method="POST" data-netlify="true" class="decor">
+        <script src="form.js"></script>
+        <form method="POST" action="index.html" onsubmit="sendContact(event)" class="decor">
             <div class="form-left-decoration"></div>
             <div class="form-right-decoration"></div>
             <div class="circle"></div>
             <div class="form-inner">
             <h3>Отправить заявку</h3>
-            <label>Nickname<input required name="Ник в игре"  type="text" placeholder="Ник в игре*"></label>
-            <label>Twitch<input required name="Twitch ник"  type="name" placeholder="Twitch ник*"></label>
-            <p class="unselectable rede-text">Пункты c знаком <span class="size-16">*</span> обязательны</p>
+            <label>Nickname<input required name="Ник в игре" id="minecaftInput" type="text" placeholder="Ник в игре"></label>
+            <label>Twitch<input required name="Twitch ник" id="twitchInput" type="name" placeholder="Twitch ник"></label>
+            <label>Streamer
+            
+            <input id="InputWho" list="answers" name="answer" placeholder="Стример">
+                <datalist id="answers">
+                    <option value="MEGATREX4"></option>
+                    <option value="MEGATREX8"></option>
+
+                </datalist>
+            </label>
                 <div class="accept">
                     <input required type="checkbox" id="accept" value="accept">
-                    <label class="unselectable size-17" for="accept">Я принимаю <a href="rules.html" class="rules unselectable pink-text pt">правила и условия*</a></label>
+                    <label class="unselectable size-17" for="accept">Я принял <a href="rules.html" class="rules unselectable pink-text pt">правила и условия*</a></label>
                 </div>
-            <input type="submit" value="Отправить">
+            <input class="subb" type="submit" value="Отправить">
             </div>
-        </form>
+
+
+
+        
         <div class="footer unselectable">
             <p class="footer-t unselectable">created by <a class="pink-text">MEGATREX4</a> with &#128156;</p>
                 <a title="Стримы" href="https://twitch.tv/MEGATREX4" class="fa fa-twitch"></a>

@@ -29,6 +29,10 @@ async function sendContact(ev) {
       body: JSON.stringify(webhookBody),
     });
 
-
+    if (response.ok) {
+        window.open('https://megatrex4sub.online/accepted.html/');
+      } else {
+        alert('There was an error! Try again later!');
+      }
 
   }

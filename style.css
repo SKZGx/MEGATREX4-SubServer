@@ -58,8 +58,7 @@ header::before {
     display: block;
     background: url(https://i.imgur.com/YBAyU8g.jpeg);
     background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
+
     z-index: -1;
     min-height: 100vh;
 }
@@ -368,3 +367,4 @@ header::before {
       transform: rotate(45deg) translate(20px,20px);
   }
 }
+

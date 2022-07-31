@@ -6,6 +6,7 @@ html {
     font-size: 16px;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    background-color: #171717;
 }
 
 body {
@@ -55,7 +56,7 @@ header::before {
     right: 0;
     bottom: 0;
     display: block;
-    background: url(https://imgur.com/YBAyU8g.jpeg);
+    background: url(https://i.imgur.com/YBAyU8g.jpeg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -78,15 +79,17 @@ header::before {
 .footer {
     margin-top: 30px;
     padding-top: 5px;
-    padding-bottom: 64px;
+
     width: 100%;
     background-color: #212121;
     color: rgb(107, 107, 107);
     text-align: center;
     z-index: 5;
     position: absolute;
+
     height:25vh ;
     left:0px;
+    border-radius: 20px;
   }
 
   a {

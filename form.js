@@ -14,7 +14,7 @@ async function sendContact(ev) {
         fields: [
           { name: 'Minecaft', value: senderMinecaft },
           { name: 'Twitch', value: senderTwitch },
-          { name: 'чей', value: Senderwho}
+          { name: 'чей будет', value: Senderwho}
         ]
       }],
     };
@@ -29,10 +29,6 @@ async function sendContact(ev) {
       body: JSON.stringify(webhookBody),
     });
 
-    if (response.ok) {
-      alert('Ваша заявка отправлена, ожидайте ответа!');
-    } else {
-      alert('There was an error! Try again later!');
-    }
+
 
   }

@@ -163,3 +163,6 @@ select, option{
 .subb{
    width: 100%!important;
 }
+input{
+   margin: 20px 0px;
+}

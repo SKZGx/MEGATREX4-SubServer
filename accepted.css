@@ -29,4 +29,12 @@ a, .colors{
     text-decoration: none !important;
 border: none !important;
 }
-  
+.pink-text{
+    color: #8C46F2!important;
+}
+
+.pt{
+    display:contents;
+    text-decoration: none;
+    font-weight: bold;
+  }
